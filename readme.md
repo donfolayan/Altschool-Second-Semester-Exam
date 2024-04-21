@@ -43,7 +43,7 @@
 ![Install Ansible](images/ansible_install.png)
 - I created deploy.yml (The ansible file), deploy.sh (The Bash Script) and host (my inventory)
 
-![Creationg of deploy.yml, deploy.sh and host](images/create%20deploy.png)
+![Creating of deploy.yml, deploy.sh and host](images/create%20deploy.png)
 - I ran the playbook using `ansible-playbook -i host deploy.yml`
 
 ![YML file running](images/playbook_result.png)
