@@ -20,11 +20,11 @@
 ```
 - I did `vagrant up` to spin up the machines
 - I did `vagrant ssh master` and in a different bash window `vagrant ssh slave`
-![SSH into master](/images/vagrant_ssh_into_master.png)
+![SSH into master](images/vagrant_ssh_into_master.png)
 - In the master machine, I set my password for the user root using `passwd root`
-![Setting Root Password](../images/change_to_root.png)
+![Setting Root Password](images/change_to_root.png)
 - I generated Keygen using `ssh-keygen` and copied the key
-![SSH key generation](../images/generate_keygen.png)
+![SSH key generation](images/generate_keygen.png)
 - I moved to the slave bash window and did changed to root
 - I did `vi ~/.ssh/authorized_keys` and pasted the keys
 - I tested the ssh key on master by running `ssh root@192.168.50.11` and prompting yes when I was prompted
