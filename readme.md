@@ -24,6 +24,7 @@
 - In the master machine, I set my password for the user root using `passwd root`
 ![Setting Root Password](images/change_to_root.png)
 - I generated Keygen using `ssh-keygen` and copied the key
+
 ![SSH key generation](images/generate_keygen.png)
 - I moved to the slave bash window and did changed to root
 - I did `vi ~/.ssh/authorized_keys` and pasted the keys
