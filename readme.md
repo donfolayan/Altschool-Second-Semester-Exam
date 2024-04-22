@@ -9,13 +9,13 @@
 ```  config.vm.define "master" do |subconfig|
     subconfig.vm.box = "ubuntu/focal64"
     subconfig.vm.hostname = "master"
-    subconfig.vm.network "private_network", ip: "192.168.50.10"
+    subconfig.vm.network "private_network", ip: "ip_addr"
   end
 
   config.vm.define "slave" do |subconfig|
     subconfig.vm.box = "ubuntu/focal64"
     subconfig.vm.hostname = "slave"
-    subconfig.vm.network "private_network", ip: "192.168.50.11"
+    subconfig.vm.network "private_network", ip: "ip_addr"
   end
 ```
 - I did `vagrant up` to spin up the machines
@@ -30,7 +30,7 @@
 ![SSH key generation](images/generate_keygen.png)
 - I moved to the slave bash window and did changed to root
 - I did `vi ~/.ssh/authorized_keys` and pasted the keys
-- I tested the ssh key on master by running `ssh root@192.168.50.11` and prompting yes when I was prompted
+- I tested the ssh key on master by running `ssh root@ip_addr` and prompting yes when I was prompted
 
 ![SSH Key test](images/test_ssh_into_slave.png)
 - I exited from the ssh connection
