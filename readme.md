@@ -51,3 +51,7 @@
 - I finally checked my browser with the ip address of the slave machine that I got using `hostname -I`
 
 ![Result](images/php_app.png)
+
+### In case images don't open
+
+[Click here](https://drive.google.com/drive/folders/1o5VLjjRur6005SoZqoj-3PI81vn_6ys5?usp=sharing)
