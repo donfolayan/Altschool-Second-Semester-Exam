@@ -41,13 +41,13 @@
 - I installed ansible `apt update` `apt install ansible`
 
 ![Install Ansible](images/ansible_install.png)
-- I created deploy.yml (The ansible file), deploy.sh (The Bash Script) and host (my inventory)
+- I created deploy.yml (The ansible file), deploy.sh (The Bash Script) and host (my inventory). See [deploy.sh here](/lamp_deploy/deploy.sh), [and deploy.yml here](/lamp_deploy/deploy.yml).
 
 ![Creating of deploy.yml, deploy.sh and host](images/create%20deploy.png)
 - I ran the playbook using `ansible-playbook -i host deploy.yml`
 
 ![YML file running](images/playbook_result.png)
-- I added a monitor.log file in the bash script to be able to monitor the progress of the playbook in the slave machine at /root/monitor.log
+- I added a monitor.log file in the bash script to be able to monitor the progress of the playbook in the slave machine at /root/monitor.log but doing `cat /root/monitor.log`
 - I finally checked my browser with the ip address of the slave machine that I got using `hostname -I`
 
 ![Result](images/php_app.png)
